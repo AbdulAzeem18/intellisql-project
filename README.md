@@ -80,8 +80,7 @@ streamlit run app.py
 - Multi-DB support
 - Charts & visualization
 - Query explanation
-- Query history
-- 
+- Query history 
 ---
 
 

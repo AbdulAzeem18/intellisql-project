@@ -1,41 +1,89 @@
 # IntelliSQL: Intelligent SQL Querying with LLMs Using Gemini Pro
 
-##  Overview
+---
 
-IntelliSQL is an AI-powered application that converts natural language queries into SQL queries using Google's Gemini Pro model. It allows users to interact with databases easily without writing SQL code manually.
+## 📌 Project Overview
+IntelliSQL is an AI-powered SQL querying system that allows users to interact with databases using natural language. Instead of writing complex SQL queries manually, users can ask questions in plain English, and the system converts them into valid SQL queries using Google Gemini Pro (LLM) and executes them on a SQLite database.
 
 ---
 
-## 📁 Project Structure
+## 🎯 Key Features
+- Convert natural language questions to SQL queries
+- Powered by Gemini Pro LLM
+- Automatic SQL generation
+- SQLite database integration
+- Streamlit interactive web UI
+- Query execution with result display
+- Syntax assistance & optimization support
 
-```
+ ---
+ 
+## 🧠 Use Cases
+Intelligent Query Assistance:
+- Helps users craft SQL queries easily
+- Suggests correct SQL syntax
+- Reduces manual effort
+
+Data Exploration:
+- Ask questions in plain English
+- Retrieve filtered data instantly
+- Discover insights quickly
+
+---
+
+## 🏗️ Architecture Flow
+1. User enters question in UI
+2. Input sent to backend
+3. Gemini Pro processes prompt
+4. Text converted to SQL
+5. SQL runs on SQLite DB
+6. Results displayed
+
+---
+
+## 🗂️ Project Structure
 IntelliSQL/
-│── app.py
-│── data.db
-│── requirements.txt
-│── .env
-│── myenv/
-```
-
-##  Features
-
-* Convert natural language into SQL queries
-* Powered by Google Gemini Pro
-* SQLite database integration
-* Interactive Streamlit interface
-* Fast and accurate results
+app.py
+sql.py
+data.db
+requirements.txt
+.env
+README.md
 
 ---
 
-##  Technologies Used
-
-* Python
-* Streamlit
-* Google Generative AI (Gemini Pro)
-* SQLite
-* python-dotenv
+## ⚙️ Requirements
+streamlit
+google-generativeai
+python-dotenv
 
 ---
+
+## 🔑 API Key Setup
+Create .env file:
+GOOGLE_API_KEY=your_api_key_here
+
+---
+
+## 🗄️ Database
+SQLite demo database with Students table.
+
+---
+
+## ▶️ Run App
+pip install -r requirements.txt
+streamlit run app.py
+
+---
+
+## 🔮 Future Enhancements
+- Multi-DB support
+- Charts & visualization
+- Query explanation
+- Query history
+- 
+---
+
 
 
 
